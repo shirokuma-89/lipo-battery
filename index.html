@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <!-- title -->
+    <title>Root41</title>
+
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="assets-index/img/favicon.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets-index/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets-index/css/theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets-index/css/style.css">
+    <link rel="stylesheet" href="assets-index/css/tanukichi.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets-index/js/myScript.js"></script>
+    <script src="assets-index/js/uikit.min.js" defer=""></script>
+    <script src="assets-index/js/uikit-icons.min.js" defer=""></script>
+  </head>
+
+  <body>
+    <section>
+      <div id="contens">
+        <!-- navber -->
+        <nav class="uk-navbar-container uk-sticky-fixed uk-light" style="position: fixed; top: 0px; width: 100%;" uk-navbar>
+
+          <div class="uk-navbar-left">
+            <a href="#" class="uk-navbar-item uk-logo">
+              &emsp;<i class="fas fa-wrench fa-lg"></i>
+              &emsp;Li-Po&thinsp;Battery&thinsp;管理サイト
+            </a>
+          </div>
+
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li>
+                <a href="https://github.com/tanukichi41/lipo-battery" target="_blank">
+                  <span uk-icon="icon: github; ratio: 2" target="_blank"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+        <div>
+          <!-- margin -->
+          <div class="uk-sticky-placeholder" style="height: 60px; margin: 0px;"></div>
+
+          <div class="tm-main uk-section">
+            <div class="uk-container uk-container-small uk-position-relative">
+              <!-- 文面 -->
+              <div id="bunmen">
+                <h1 id="top" class="uk-h1 tm-heading-fragment">
+                  <a href="#top" id="ja">Li-Po&thinsp;Battery&thinsp;管理サイト</a>
+                </h1>
+                <p class="uk-text-lead" id="ja">
+                  Robocup junior Gifu Root41<br>
+                </p>
+
+                <h2 id="introduction" class="uk-h3 tm-heading-fragment">
+                  <a href="#introduction" id="ja">運用規則</a>
+                </h2>
+                <p id="ta-medium">
+                  <h2 id="">通常運用時</h2>
+                  <h3 id="">充電</h3>
+                  <ul>
+                    <li>監視者が直接安全を確認できる（=近くにいる）状況でのみ充電を行う</li>
+                    <li>充電中は難燃性セーフティーバッグに入れる</li>
+                    <li>充電は 1C 充電以下で行う</li>
+                    <li>バッテリーに適したモードで充電する</li>
+                    <li>充電中のバッテリーとそれ以外のバッテリーは隔てる</li>
+                    <li>過充電にならぬよう充電完了後、すぐにバッテリーを充電器から外す</li>
+                  </ul>
+                  <h3 id="-1">保管</h3>
+                  <ul>
+                    <li>セーフティーバッグの中に入れたうえでふたが閉まる金属製ケースに確実に入れる</li>
+                    <li>保管時は残量を 50%~60%（1 セル当たり 3.7 ～ 3.9V）にして保管する</li>
+                    <li>1 セル当たりの電圧が 3.125V を下回らないように注意する</li>
+                    <li>高温な場所（夏場の車内なども含む）に放置しない</li>
+                    <li>過放電を防ぐために最低 3 日おきにバッテリーの電圧を確認する</li>
+                  </ul>
+                  <h3 id="-2">使用時</h3>
+                  <ul>
+                    <li>
+                      ロボットには 20A 遮断以下のヒューズを付ける
+                    </li>
+                    <li>
+                      電圧計で常に電圧を確認する。または過放電防止回路で監視する。
+                    </li>
+                    <li>
+                      動かないように面で固定する
+                    </li>
+                    <li>バッテリーを使い切らずに余裕をもって交換する
+                    </li>
+                  </ul>
+                  <h3 id="-3">安全管理</h3>
+                  <ul>
+                    <li>1 セル当たりの電圧が 3.5V 未満になった場合、過放電を防ぐために充電する</li>
+                    <li>各セルの電圧差が 0.1V 以上になったらバランス充電を行う</li>
+                    <li>各バッテリーに購入年月日とバッテリー番号をシール等を用いて記入する</li>
+                    <li>膨らみにすぐに気づけるように、購入時に未使用の状態でバッテリーの写真を撮る</li>
+                    <li>膨らんだバッテリーは使用しない</li>
+                    <li>各セルの電圧差がバランス充電できないほど大きくなったら使用しない</li>
+                    <li>バッテリーから臭いがしたらロボットからすぐに取り外し使用しない</li>
+                    <li>ロボットを分解する、または電気的な作業を行う際はバッテリーを取り外す</li>
+                    <li>正常動作が確認されていないロボット（完成したて・点検後のロボットなど）には Ni-MH 等で安全を確認したのちバッテリーを装着する</li>
+                    <li>過充電、過放電に注意する</li>
+                    <li>コネクタ改造は行わない</li>
+                  </ul>
+                  <h2 id="-4">廃棄時</h2>
+                  <ul>
+                    <li>3-5%の食塩水を十分に用意し、バッテリーを浸ける</li>
+                    <li>換気の良い場所で3日以上放置する</li>
+                    <li>廃棄処理が終わったバッテリーは各自治体の指示に従って廃棄する</li>
+                  </ul>
+                  <h2 id="-5">緊急時</h2>
+                  <h3 id="-6">ヒューズが切れたとき</h3>
+                  <ul>
+                    <li>すぐに落ち着いてバッテリーを取り外す</li>
+                    <li>膨らみがないことを確認する</li>
+                    <li>原因を特定するまでバッテリーを接続しない。また動作確認は Ni-MH 等で行う。</li>
+                  </ul>
+                  <p><strong>バッテリーからの発煙、膨らみがある場合使用しない</strong></p>
+                  <h3 id="-7">発煙時</h3>
+                  <ul>
+                    <li>まずロボットの電源を切り、すぐに落ち着いてバッテリーを取り外す</li>
+                    <li>バッテリーからの発煙ではないことを確認する。バッテリーからの発煙であった場合使用しない</li>
+                    <li>バッテリーの膨らみがないことを確認する。膨らみがある場合使用しない</li>
+                    <li>原因を特定するまでバッテリーを接続しない。また動作確認は Ni-MH 等で行う。</li>
+                  </ul>
+                  <h3 id="-8">発火時</h3>
+                  <ul>
+                    <li>周りの可燃物を避ける</li>
+                    <li>可能であれば(A)BC 消火器で鎮火する</li>
+                    <li>鎮火が厳しい場合、即座に避難する</li>
+                    <li>煙は有毒である可能性があるので吸わない</li>
+                    <li>絶対に触らない。むやみに近づかない</li>
+                    <li>鎮火後、慎重に廃棄する</li>
+                  </ul>
+                </p>
+
+                <h2 id="links" class="uk-h3 tm-heading-fragment">
+                  <a href="#links" id="en">Links</a>
+                </h2>
+                <p id="ta-medium">
+                  <table class="uk-table">
+                    <caption></caption>
+                    <tbody>
+                      <tr>
+                        <td>#001</td>
+                        <td align="right">
+                          <a href="001.html" uk-icon="link"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>#002</td>
+                        <td align="right">
+                          <a href="002.html" uk-icon="link"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+              </div>
+
+              <!--subnav -->
+              <div class="tm-sidebar-right uk-visible@l" id=" subnav">
+                <div uk-sticky="offset: 100" class="uk-sticky uk-active uk-sticky-fixed" style="position: fixed; top: 0px; width: 200px;">
+                  <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon" style="position: fixed;">
+                    <li class="uk-active"><a href="#introduction" id="ta-list">
+                        運用規則</a></li>
+                    <li class=""><a href="#links" id="ta-list">
+                        Links</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>

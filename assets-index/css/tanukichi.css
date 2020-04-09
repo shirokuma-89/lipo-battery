@@ -1,0 +1,68 @@
+nav {
+  background: linear-gradient(
+    -135deg,
+    rgb(55, 150, 180),
+    rgb(100, 170, 94)
+  ) !important;
+}
+
+h3,
+h2 {
+  color: #cccccc;
+}
+
+#ja {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(204, 204, 204);
+}
+
+#en {
+  color: rgb(204, 204, 204) !important;
+}
+
+#bunmen {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(163, 163, 163);
+}
+
+#ta-medium {
+  /* font-size: 20px; */
+}
+
+#ta-image {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.8));
+}
+
+#ta-loading {
+  font-family: sans-serif;
+}
+section {
+  display: none;
+}
+body {
+  background: rgb(25, 25, 25) !important;
+}
+
+uk-text-lead {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(163, 163, 163);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: solid 1px rgb(102, 102, 102);
+}
+
+#ta-list {
+  color: rgb(163, 163, 163);
+}
+
+loader-tx {
+  color: white;
+  font-size: 100%;
+}
